@@ -18,10 +18,6 @@ def main(args):
         d = data[i]
 
         if (d & 0x01) != 0x00:
-            if (d & 0x08) != 0x00:
-                result.append(f'{bank:02x}:{offset:04x} Call_{bank:02x}_{offset:04x}')
-            if (d & 0x04) != 0x00:
-                result.append(f'{bank:02x}:{offset:04x} Jump_{bank:02x}_{offset:04x}')
             d = 0x01
             data[i] = d
 
