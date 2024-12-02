@@ -1,2 +1,2 @@
-* Supported CDL file format: Mesen
-* Symbol file Usage: mgbdis
+ * Supported CDL file format: Mesen
+ * Symbol file Usage: mgbdis
