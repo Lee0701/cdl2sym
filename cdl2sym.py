@@ -27,12 +27,12 @@ def main(args):
 
         j = i
         while data[j] == d:
-            if j + 1 == len(data):
-                break
-            if (j + 1) % 0x4000 == 0:
-                break
             j += 1
-        length = j - i + 1
+            if j == len(data):
+                break
+            if j % 0x4000 == 0:
+                break
+        length = j - i
         i += length
 
         if d == 0x01:
